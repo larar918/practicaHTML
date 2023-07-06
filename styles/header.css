@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px;
+}
+
+/* Formato imagen de perfil */
+.header .header__image {
+    width: 120px;
+}
+  
+.header__image img {
+    width: 100%;
+    border-radius: 200px;
+}
+
+/* Formato botones del menú */
+.header .header__nav .header__nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

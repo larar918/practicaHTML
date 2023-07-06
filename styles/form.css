@@ -1,0 +1,44 @@
+.form__card {
+    padding: 20px;
+    width:90%;
+    margin-left:5%;
+    background-color: var(--main-bg-color); 
+}
+
+.form__element, .form__element__radio {
+    display:flex;
+    flex-direction: column;
+}
+
+.form__input{
+    width:90%;
+    height: 40%;
+    margin-top: 5px;
+}
+
+.form__label {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.form__element__radio {
+    margin-top: 10px; 
+}
+
+.checkbox{
+    flex-direction: row;
+    margin:20px 20px 20px 0px;
+}
+
+.form__button, .checkbox{
+    flex-direction:row;
+    margin-right: 2px;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.form__element textarea {
+    resize:none;
+ }

@@ -1,0 +1,14 @@
+.footer__links {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+} 
+
+.footer__links__image {
+    width:40px;
+}
+
+.footer__links__image img {
+    width:100%;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body class="main-bg">
+
+    <header class="header">
+        <div class="header__image">
+            <img src="assets/logo.jpg" alt="Harry Potter">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a href="#projects" class="button-hidden">Proyectos</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="#skills" class="button-hidden">Skills</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="#contacts" class="button-hidden">Contacto</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="#menu" class="button">Menu</a>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section class="info">
+            <div>
+                <p class="title">Harry Potter</p>
+                <p>¡Hola! Soy Harry Potter, el famoso mago que venció a Lord Voldemort. Estudiante de Hogwarts y orgulloso miembro de Gryffindor. Aventuras mágicas y peligros me aguardan junto a mis leales amigos Ron y Hermione. Mi propósito es luchar contra el mal y ser una luz de esperanza. Siempre dispuesto a proteger a quienes amo en el mundo mágico.</p>
+            </div>
+            <div>
+                <div>
+                    Skills
+                </div>
+            </div>
+        </section>
+        <div class="form__card">
+            <form class="form" action="#" method="post">
+                <div class="form__element">
+                    <label for="name" class="form__label">Nombre</label>
+                    <input class="form__input" id="name" type="text"  name="name"required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="surname">Apellidos</label>
+                    <input class="form__input" type="text" id="surname" name="surname" required> 
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="phone">Teléfono</label>
+                    <input class="form__input" type="tel" id="phone"  name="phone" required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="git">GitHub username</label>
+                    <input class="form__input" type="text" id="git" name="git" required pattern="“^@[^\s]+"> 
+                </div>
+                <div class="form__element">
+                    <label class="form__label">¿Cómo me conociste?</label>
+                    <div class="form__element__radio">
+                        <div>
+                            <input type="radio" id="university" name="category" value="university">
+                            <label for="university">University</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="keepcoding" name="category" value="keepcoding">
+                            <label for="keepcoding">Keepcoding KickOff</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="school" name="category" value="school">
+                            <label for="school">Colegio</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="github" name="category" value="git">
+                            <label for="github">GitHub</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="info">Añade más información</label>
+                    <textarea class="form__input" name="info" id="info" placeholder="Add more info"></textarea>
+                </div>
+                <div class="form__element checkbox">
+                    <input type="checkbox" id="remember" name="remember" checked>
+                    <label for="remember">Quiero acceso a la newsletter</label>
+                </div>
+                <div class="form__button">
+                    <input type="submit" value="Enviar" class="form__final__button button-secondary ">
+                    <input type="reset" value="Reset" class="form__final__button">
+                </div>
+            </form>
+        </div>
+        <hr>
+    </main>
+    <footer class="footer">
+        <div class="footer__links">
+            <div class="footer__links__image">
+                <a href="https://www.instagram.com/harrypotterfilm/" target="_blank">
+                    <img  class="instagram-icon" src="assets/instagram.jpg" alt="instagram">
+                </a>
+            </div>
+            <div class="footer__links__image">
+                <a href="https://twitter.com/harrypotter?lang=es" target="_blank">
+                    <img class="twitter-icon" src="assets/twitter.jpg" alt="twitter">
+                </a>
+            </div>
+            <div class="footer__links__image">
+                <a href="https://www.youtube.com/@harrypotter" target="_blank">
+                    <img class="youtube-icon" src="assets/youtube.jpg" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

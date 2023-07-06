@@ -1,0 +1,19 @@
+/* Se usa para definir una variable. Desde este archivo
+se puede utilizar en otros ficheros css*/
+:root {
+    --main-bg-color:#000;
+    --main-text-color:rgb(255,255,255);
+    --main-brand-color: #740001;
+    --main-brand-color-secondary:#d3a625;
+    font-size: 16px;
+    font-family:sans-serif;
+}
+
+.main-bg {
+    color:var(--main-text-color);
+    background-color:var(--main-bg-color);
+}
+
+*{
+    box-sizing: border-box;
+}

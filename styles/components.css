@@ -1,0 +1,37 @@
+/* Formato botones */
+.button-hidden, .button , .form__final__button {
+    text-decoration: none;
+    padding:8px;
+    background-color: var(--main-brand-color); 
+    color:var(--main-text-color);
+    border-radius:4px;
+    transition: border 2s ease; 
+    margin-right: 10px;
+}
+
+.button:hover, .button-hidden:hover {
+    border: 2px solid var(--main-brand-color-secondary);
+}
+
+.button-secondary {
+    background-color: var(--main-brand-color-secondary);
+}
+
+/* Menú según los pixeles de la pantalla */
+@media screen and (min-width: 768px) {
+    .button-hidden {
+        display:block; 
+    }
+    .button {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .button-hidden {
+        display:none; 
+    }
+    .button {
+        display:block;
+    }
+}
