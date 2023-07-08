@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/info.css">
 </head>
 <body class="main-bg">
-
     <header class="header">
         <div class="header__image">
             <img src="assets/logo.jpg" alt="Harry Potter">
@@ -38,32 +38,81 @@
         <hr>
         <section class="info">
             <div>
-                <p class="title">Harry Potter</p>
-                <p>¡Hola! Soy Harry Potter, el famoso mago que venció a Lord Voldemort. Estudiante de Hogwarts y orgulloso miembro de Gryffindor. Aventuras mágicas y peligros me aguardan junto a mis leales amigos Ron y Hermione. Mi propósito es luchar contra el mal y ser una luz de esperanza. Siempre dispuesto a proteger a quienes amo en el mundo mágico.</p>
+                <h2 class="title">Harry Potter</h2>
+                <p class="description">¡Hola! Soy Harry Potter, el famoso mago que venció a Lord Voldemort. 
+                    Estudiante de Hogwarts y orgulloso miembro de Gryffindor. 
+                    Aventuras mágicas y peligros me aguardan junto a mis leales amigos Ron y Hermione. 
+                    Mi propósito es luchar contra el mal y ser una luz de esperanza. 
+                    Siempre dispuesto a proteger a quienes amo en el mundo mágico.
+                </p>
             </div>
             <div>
-                <div>
-                    Skills
+                <h3 class="title">Skills</h3>
+                <div class="skill" id="skills">
+                    <div class="skill__container">
+                        <div class="skill__element">
+                            <span>Transformación animaga</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress first__type skill__one"></div>
+                            </div>
+                        </div>
+                        <div class="skill__element">
+                            <span>Metamorfomagia</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress second__type skill__two"></div>
+                            </div>
+                        </div>
+                        <div class="skill__element">
+                            <span>Lengua pársel</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress first__type skill__three"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill__container">
+                        <div class="skill__element">
+                            <span>Videncia</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress second__type skill__four"></div>
+                            </div>
+                        </div>
+                        <div class="skill__element">
+                        <span>Oclumancia</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress first__type skill__five"></div>
+                            </div>
+                        </div>
+                        <div class="skill__element">
+                            <span>Teletransporte</span>
+                            <div class="skill__container__edge">
+                                <div class="skill__container__progress second__type skill__six"></div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
-        <div class="form__card">
+        <div class="form__card" id="contacts">
             <form class="form" action="#" method="post">
-                <div class="form__element">
-                    <label for="name" class="form__label">Nombre</label>
-                    <input class="form__input" id="name" type="text"  name="name"required>
+                <div class="form__container">
+                    <div class="form__element">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input class="form__input" id="name" type="text"  name="name"required>
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="surname">Apellidos</label>
+                        <input class="form__input" type="text" id="surname" name="surname" required> 
+                    </div>
                 </div>
-                <div class="form__element">
-                    <label class="form__label" for="surname">Apellidos</label>
-                    <input class="form__input" type="text" id="surname" name="surname" required> 
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="phone">Teléfono</label>
-                    <input class="form__input" type="tel" id="phone"  name="phone" required>
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="git">GitHub username</label>
-                    <input class="form__input" type="text" id="git" name="git" required pattern="“^@[^\s]+"> 
+                <div class="form__container">
+                    <div class="form__element">
+                        <label class="form__label" for="phone">Teléfono</label>
+                        <input class="form__input" type="tel" id="phone"  name="phone" required>
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="git">GitHub username</label>
+                        <input class="form__input" type="text" id="git" name="git" required pattern="^@[^\s]+"> 
+                    </div>
                 </div>
                 <div class="form__element">
                     <label class="form__label">¿Cómo me conociste?</label>
@@ -100,7 +149,7 @@
                 </div>
             </form>
         </div>
-        <hr>
+        <hr> 
     </main>
     <footer class="footer">
         <div class="footer__links">

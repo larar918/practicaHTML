@@ -1,0 +1,76 @@
+.title {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.info {
+    padding: 20px;
+    width:90%;
+    margin-left:5%;
+}
+
+.skill__container__edge {
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+.skill__container__progress {
+    background-color: var(--main-brand-color-secondary);
+    border-radius: 10px;
+    width:50%;
+    animation: progress_animation 4s forwards, flash_animation 2s infinite;
+}
+
+.first__type {
+    background-color: var(--main-brand-color);
+    padding:10px;
+}
+
+.second__type {
+    background-color: var(--main-brand-color-secondary);
+    padding:10px;
+}
+
+.skill__element {
+    margin-bottom:2%;
+}
+
+/* Progresos de la barra de progreso */
+.skill__one {--progress-width:90%;}
+.skill__two {--progress-width:60%;}
+.skill__three {--progress-width:98%;}
+.skill__four {--progress-width:70%;}
+.skill__five {--progress-width:90%;}
+.skill__six {--progress-width:80%;}
+
+/* Animación de las barras de progreso */
+@keyframes progress_animation {
+    0% {width: 0%;}
+    100% {width: var(--progress-width, 0%);}
+}
+
+@keyframes flash_animation {
+    0% {opacity: 1;}
+    50% {opacity: 0.70;}
+    100% {opacity: 1;}
+  }
+
+/* Disposición barras de estado en modelo desktop*/
+@media screen and (min-width:768px){
+    .skill__container {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .skill__element {
+        width:33%;
+    }
+
+    .skill__container__edge {
+        width:75%;
+    }
+
+    .description {
+        width:93.3%;
+    }
+}
