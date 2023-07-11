@@ -1,5 +1,5 @@
 .banner{
-    height:70vh; /* Ocupa un 75% de la altura de la pantalla */
+    height:30vh;
     position:relative;
     margin-top:30px;
 }
@@ -13,19 +13,18 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    opacity: 0.8;
+    bottom: 0; 
+    opacity:0.8;
 }
 
 
 @media screen and (min-width:768px){
-
     .banner{
         height:60vh;
+        background-image: none;
     }
 
     .banner .banner__content{
         background-image: url('../assets/banner.jpg');
-      
     }
 }

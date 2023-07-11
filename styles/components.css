@@ -1,5 +1,5 @@
 /* Formato botones */
-.button-hidden, .button , .form__final__button {
+.button-hidden, .button , .form__final__button, .button__projects{
     text-decoration: none;
     padding:8px;
     background-color: var(--main-brand-color); 
@@ -9,7 +9,7 @@
     margin-right: 10px;
 }
 
-.button:hover, .button-hidden:hover {
+.button:hover, .button-hidden:hover, .button__projects:hover {
     border: 2px solid var(--main-brand-color-secondary);
 }
 
@@ -17,7 +17,22 @@
     background-color: var(--main-brand-color-secondary);
 }
 
-/* Menú según los pixeles de la pantalla */
+.trailer {
+    position:relative;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.trailer video {
+    position:absolute;
+    height:90%;
+    width:90%;
+    top: 0%;
+    left: 5%;
+    right: 0%;
+    bottom:0%;
+}
+
 @media screen and (min-width: 768px) {
     .button-hidden {
         display:block; 
@@ -31,7 +46,17 @@
     .button-hidden {
         display:none; 
     }
+
     .button {
         display:block;
+    }
+}
+
+@keyframes video_animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
 }
