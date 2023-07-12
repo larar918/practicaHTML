@@ -1,13 +1,16 @@
 .movies {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
+    margin-top: -3%;
 }
 
 .movies__list {
     list-style:none;
     display:grid;
     grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    margin-left: -40px;
 }
 
 .movies .movies__list img {
@@ -16,12 +19,16 @@
     border-radius: 10px;
 }
 
+.movies .movies__list figure {
+    margin:0px; 
+}
+
 figcaption {
     font-size:15px;
     text-align: center;
     padding-top:10px;
+    padding-bottom: 20px;
 }
-
 
 @media (min-width:768px){  
     .movies__list{

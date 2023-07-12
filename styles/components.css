@@ -15,6 +15,11 @@
 
 .button-secondary {
     background-color: var(--main-brand-color-secondary);
+    color:black;
+}
+
+.form__final__button {
+    border:none;
 }
 
 .trailer {
@@ -31,6 +36,8 @@
     left: 5%;
     right: 0%;
     bottom:0%;
+    opacity: 0;
+    animation: video_animation 4s ease-in-out forwards;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,10 +60,10 @@
 }
 
 @keyframes video_animation {
-    0% {
-      opacity: 0;
+    from {
+        opacity: 0;
     }
-    100% {
-      opacity: 1;
+    to {
+        opacity: 1;
     }
 }

@@ -30,7 +30,7 @@
                     <a href="#contacts" class="button-hidden">Contacto</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="#menu" class="button">Menu</a>
+                    <a href="proyectos.html" class="button">Proyectos</a>
                 </li>
             </ul>  
         </nav>
@@ -97,7 +97,7 @@
             <div class="banner__content"></div>
         </section>
         <div class="form__card" id="contacts">
-            <form class="form" action="#" method="post">
+            <form class="form" action="index.html" method="get">
                 <div class="form__container">
                     <div class="form__element">
                         <label for="name" class="form__label">Nombre</label>
@@ -115,40 +115,40 @@
                     </div>
                     <div class="form__element">
                         <label class="form__label" for="git">GitHub username</label>
-                        <input class="form__input" type="text" id="git" name="git" required pattern="^@[^\s]+"> 
+                        <input class="form__input" type="text" id="git" name="git" pattern="^@[^\s]+"> 
                     </div>
                 </div>
                 <div class="form__element">
                     <label class="form__label">¿Cómo me conociste?</label>
                     <div class="form__element__radio">
                         <div>
-                            <input type="radio" id="anden" name="category" value="university">
+                            <input type="radio" id="anden" name="category" value="university" required>
                             <label for="university">Andén 9 3/4</label>
                         </div>
                         <div>
-                            <input type="radio" id="callejon_diagon" name="category" value="keepcoding">
+                            <input type="radio" id="callejon_diagon" name="category" value="keepcoding" required>
                             <label for="keepcoding">Callejón Diagon</label>
                         </div>
                         <div>
-                            <input type="radio" id="hogwarts" name="category" value="school">
+                            <input type="radio" id="hogwarts" name="category" value="school" required>
                             <label for="school">Hogwarts</label>
                         </div>
                         <div>
-                            <input type="radio" id="bosque_prohibido" name="category" value="git">
+                            <input type="radio" id="bosque_prohibido" name="category" value="git"required>
                             <label for="github">El Bosque Prohibido</label>
                         </div>
                     </div>
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="info">Añade más información</label>
-                    <textarea class="form__input" name="info" id="info" placeholder="Add more info"></textarea>
+                    <textarea class="form__input" name="info" id="info" placeholder="Add more info" maxlength="180" required></textarea>
                 </div>
                 <div class="form__element checkbox">
                     <input type="checkbox" id="remember" name="remember" checked>
                     <label for="remember">Quiero acceso a la newsletter</label>
                 </div>
                 <div class="form__button">
-                    <input type="submit" value="Enviar" class="form__final__button button-secondary ">
+                    <input type="submit" value="Enviar" class="form__final__button button-secondary">
                     <input type="reset" value="Reset" class="form__final__button">
                 </div>
             </form>
