@@ -14,6 +14,7 @@
 .header__image img {
     width: 100%;
     border-radius: 200px;
+    border: 4px solid var(--main-brand-color-secondary);
 }
 
 /* Formato botones del menú */

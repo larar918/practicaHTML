@@ -97,7 +97,7 @@
             <div class="banner__content"></div>
         </section>
         <div class="form__card" id="contacts">
-            <form class="form" action="index.html" method="get">
+            <form class="form" action="index.html" method="post">
                 <div class="form__container">
                     <div class="form__element">
                         <label for="name" class="form__label">Nombre</label>
@@ -111,7 +111,7 @@
                 <div class="form__container">
                     <div class="form__element">
                         <label class="form__label" for="phone">Teléfono</label>
-                        <input class="form__input" type="tel" id="phone"  name="phone" required>
+                        <input class="form__input" type="tel" id="phone"  name="phone" pattern="[679]{1}[0-9]{8}" required>
                     </div>
                     <div class="form__element">
                         <label class="form__label" for="git">GitHub username</label>
@@ -122,20 +122,20 @@
                     <label class="form__label">¿Cómo me conociste?</label>
                     <div class="form__element__radio">
                         <div>
-                            <input type="radio" id="anden" name="category" value="university" required>
-                            <label for="university">Andén 9 3/4</label>
+                            <input type="radio" id="anden" name="category" value="anden" required>
+                            <label for="anden">Andén 9 3/4</label>
                         </div>
                         <div>
-                            <input type="radio" id="callejon_diagon" name="category" value="keepcoding" required>
-                            <label for="keepcoding">Callejón Diagon</label>
+                            <input type="radio" id="callejon_diagon" name="category" value="callejon_diagon" required>
+                            <label for="callejon_diagon">Callejón Diagon</label>
                         </div>
                         <div>
-                            <input type="radio" id="hogwarts" name="category" value="school" required>
-                            <label for="school">Hogwarts</label>
+                            <input type="radio" id="hogwarts" name="category" value="hogwarts" required>
+                            <label for="hogwarts">Hogwarts</label>
                         </div>
                         <div>
-                            <input type="radio" id="bosque_prohibido" name="category" value="git"required>
-                            <label for="github">El Bosque Prohibido</label>
+                            <input type="radio" id="bosque_prohibido" name="category" value="bosque_prohibido"required>
+                            <label for="bosque_prohibido">El Bosque Prohibido</label>
                         </div>
                     </div>
                 </div>
