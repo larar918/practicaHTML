@@ -6,7 +6,7 @@ se puede utilizar en otros ficheros css*/
     --main-brand-color: #740001;
     --main-brand-color-secondary:#d3a625;
     font-size: 16px;
-    font-family: 'Harry Potter', sans-serif;
+    font-family:'HarryPotter', sans-serif;
 }
 
 .main-bg {
@@ -19,6 +19,6 @@ se puede utilizar en otros ficheros css*/
 }
 
 @font-face {
-    font-family: 'Harry Potter';
-    src: url(/styles/font.otf);
+    font-family:'HarryPotter';
+    src: url(font.otf);
 }
